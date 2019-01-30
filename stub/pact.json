@@ -1,0 +1,60 @@
+{
+  "consumer": {
+    "name": "some-consumer"
+  },
+  "provider": {
+    "name": "some-provider"
+  },
+  "interactions": [
+    {
+      "description": "health check",
+      "provider_state": "Some state",
+      "request": {
+        "method": "GET",
+        "path": "/health"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "text/plain"
+        },
+        "body": "OK"
+      }
+    },
+    {
+      "description": "find all rpoducts",
+      "provider_state": "Some state",
+      "request": {
+        "method": "GET",
+        "path": "/products"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body":
+        {
+          "Products": {
+            "Product": [
+              {
+                "CatalogueID": "101",
+                "Name": "Widget",
+                "Price": "10.99",
+                "Manufacturer": "Company A",
+                "InStock": "Yes"
+              },
+              {
+                "CatalogueID": "300",
+                "Name": "Fooble",
+                "Price": "2.00",
+                "Manufacturer": "Company B",
+                "InStock": "No"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
