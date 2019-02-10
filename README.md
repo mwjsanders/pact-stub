@@ -1,7 +1,5 @@
 # Service stub met behulp van Pact
 
-Voor het lokaal testen van je applicatie kan het soms handig zijn om externe services waar je applicatie gebruik van maakt te mocken of te stubben. Op deze manier kan een applicatie gei# Service stub met behulp van Pact
-
 Voor het lokaal testen van je applicatie kan het soms handig zijn om externe services waar je applicatie gebruik van maakt te mocken of te stubben. Op deze manier kan een applicatie geïsoleerd getest worden zonder dat dit invloed heeft op de toestand van eventuele afhankelijke test of productie applicaties. Ook is het dan niet nodig om lokaal een instantie van deze externe services te deployen. [Pact.io](http://pact.io) biedt een mogelijkheid om snel en eenvoudig een server stub op te zetten.
 
 [Pact.io](http://pact.io) is een test tool voor het testen van het contract tussen een consumer en een provider van een service. Voor verdere details hiervoor wil ik je verwijzen naar [https://docs.pact.io/](). In deze blog ga ik slechts in op een klein deel van Pact: De server stub. En dan met name hoe je deze stub moet opzetten en hoe je deze stub kan inzetten bij integratie tests.
